@@ -45,5 +45,19 @@ namespace ToDoList
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editbutton_Click(object sender, EventArgs e)
+        {
+            int index = checkedListBox1.SelectedIndex;
+            checkedListBox1.Items.RemoveAt(index);
+            checkedListBox1.Items.Insert(index, checkedListBox1.Text);
+
+
+        }
     }
 }
