@@ -24,12 +24,12 @@ namespace ToDoList
 
         private void removebutton_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
         }
 
         private void addbutton_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Add(textBox1);
+            checkedListBox1.Items.Add(textBox1.Text);
         }
 
         private void countbutton_Click(object sender, EventArgs e)
